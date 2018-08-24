@@ -21,24 +21,25 @@
     <div class="row section">
       <div class="col s12 m6 offset-m3">
         <div class="card light-blue lighten-1">
-          <div class="card-image">
-            <img src="https://source.unsplash.com/random/400x304"> <span class=
-            "card-title orange-text" id="weather-location">Dallas</span>
-          </div>
+          <!-- <div class="card-image">
+            <img id="weather-icon" src="" height="250px" width="250px">
+          </div> -->
           <div class="card-content">
-            <h3 class="header center orange-text" id="weather-temperature">97.65 &#8457;</h3>
-            <h4 class="header center white-text" id="weather-description">Clear sky</h4>
+            <h2 class="header center white-text" id="weather-location"></h2>
+            <h3 class="header center orange-text" id="weather-temperature"></h3>
+            <h4 class="header center white-text" id="weather-description"></h4>
             <h4 class="header center white-text" id="weather-string"></h4>
-            <!-- <p class="white-text">Clear Sky</p> -->
+            
             <ul class="collection">
-              <li class="collection-item" id="weather-temperature-max">100</li>
-              <li class="collection-item" id="weather-temperature-min">95</li>
-              <li class="collection-item" id="weather-humidity">42</li>
-              <li class="collection-item" id="weather-wind-speed">7.38</li>
+              <li class="collection-item" id="weather-temperature-max"></li>
+              <li class="collection-item" id="weather-temperature-min"></li>
+              <li class="collection-item" id="weather-humidity"></li>
+              <li class="collection-item" id="weather-wind-speed"></li>
             </ul>
           </div>
           <div class="card-action">
             <!-- Modal Trigger -->
+            <p class="white-text">Change City Location</p>
             <button class="btn modal-trigger btn-floating btn-large pulse orange" data-target=
             "modal1"><i class="material-icons">cloud</i>Modal</button>
           </div>
