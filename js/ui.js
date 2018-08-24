@@ -13,13 +13,12 @@ class UI {
   paint(weather) {
     // this.icon.setAttribute('src', "http://openweathermap.org/img/w/"+weather.weather['0'].icon+".png");
     this.location.textContent = weather.name;
+    this.description.textContent = weather.weather['0'].description;
     this.temperature.textContent = `${weather.main.temp}℉`;
     // Access the description element in the JSON array
-    this.description.textContent = weather.weather['0'].description;
-    this.temperatureMax.textContent = `Temp Max: ${weather.main.temp_max}℉`;
     this.temperatureMin.textContent = `Temp Min: ${weather.main.temp_min}℉`;
+    this.temperatureMax.textContent = `Temp Max: ${weather.main.temp_max}℉`;
     this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
     this.windSpeed.textContent = `Wind Speed: ${weather.wind.speed} mph`;
-    console.log("http://openweathermap.org/img/w/"+weather.weather['0'].icon+".png");
   }
 }
