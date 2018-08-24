@@ -12,6 +12,7 @@ class Weather {
     // Returns a promise
     return responseData;
   }
+  
   // Change location
   change_location(city) {
     this.city = city;
