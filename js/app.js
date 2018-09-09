@@ -10,6 +10,7 @@ const weather = new Weather(weatherLocationCity.city);
 // Initialize UI object
 const ui = new UI();
 
+// Declare and target the submit button
 const submitBTN = document.querySelector("#submit-btn");
 
 // Display the weather for the default city
